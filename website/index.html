@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PromTly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Static presentation site for InnovAct 2025 hackathon – Prompt Preprocessor using local LLaMA 3.1 8B with Instant & Analysis modes.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sticky Nav -->
+  <header class="site-header">
+    <div class="brand">
+      <!-- <span class="logo">IA’25</span> -->
+      <span class="title">PromTly</span>
+    </div>
+    <nav class="nav">
+      <a href="#title">Title</a>
+      <a href="#problem">Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#tech">Technical</a>
+      <a href="#demo">Demo</a>
+      <a href="#impact">Impact</a>
+      <a href="#challenges">Challenges</a>
+      <a href="#future">Future</a>
+      <a href="#conclusion">Conclusion</a>
+      <!-- <a href="#ack">Thanks</a> -->
+    </nav>
+    <!-- <button id="printBtn" class="btn btn-ghost">Print / Save PDF</button> -->
+    <!-- <button id="themeBtn" class="btn btn-ghost" aria-label="Toggle theme">Theme</button> -->
+  </header>
+
+  <main id="top">
+    <!-- 1. Title Page / Landing Page (Required) -->
+    <section id="title" class="panel hero" data-section="1. Title Page / Landing Page">
+      <div class="hero-inner">
+        <h1 class="hack-title">InnovAct 2025</h1>
+        <p class="subtitle">Track: <span class="pill" id="trackPill">AI/ML and blockchain</span></p>
+
+        <h2 class="proj-title">Prompt Preprocessor for Better LLM Results</h2>
+        <p class="tagline">Chrome Extension · Local <strong>LLaMA 3.1:8B</strong> · Two Modes: <strong>Instant</strong> & <strong>Analysis</strong></p>
+
+        <div class="card grid two">
+          <div>
+            <h3>Team Details</h3>
+            <ul class="team">
+              <li>Tharun Prasath M - 25BCE0506</li>
+              <li>shivansh verma - 25BEC0277</li>
+              <li>Sandeev R.B - 25BCE0510</li>
+              <li>Anushree S - 25BCE0549</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Innovation ID (YUKTI)</h3>
+            <p class="mono" id="innovationId">IR2025-995932</p>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn" href="#demo">Jump to Demo</a>
+          <a class="btn btn-outline" href="#problem">Start Presentation</a>
+        </div>
+      </div>
+      <span class="section-label">1</span>
+    </section>
+
+    <!-- 2. Problem Statement (Required) -->
+    <section id="problem" class="panel" data-section="2. Problem Statement">
+      <h2>Problem Statement</h2>
+      <p>
+        Many users enter underspecified or ambiguous prompts into LLM chatboxes, leading to
+        inconsistent outputs, wasted tokens, repeated iterations and computatial power wasted
+      </p>
+      <div class="card">
+        <h3>Why it matters</h3>
+        <ul class="bullets">
+          <li>Ambiguity and missing constraints reduce answer quality.</li>
+          <li>Users lack immediate feedback on prompt weaknesses.</li>
+          <li>Using multiple prompts to correct AI, wastes the computational power</li>
+          <li>Physical Resources like Water and Electricity gets wasted</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Scary Fact</h3>
+        <p>The “invisible cost” of asking an AI a simple question might be closer to draining a glass of water and flipping on a few household light bulbs each time.</p>
+    </div>
+        <div class="card">
+            <b>We Should use AI <i>Mindfully, Responsibly, Sustainably</i></b>
+        </div>
+      <span class="section-label">2</span>
+    </section>
+
+    <!-- 3. Proposed Solution (Required) -->
+    <section id="solution" class="panel" data-section="3. Proposed Solution">
+      <h2>Proposed Solution</h2>
+      <p>
+        A Chrome extension that preprocesses selected prompt in any chat textbox (e.g., ChatGPT). And pipline it to a light-weight fast Ai model to optimise it to reduce multiple use of AI due to vague, underspecified, ambiguous prompts.
+      </p>
+      <div class="card">
+        <i>"Basically using <b>light-weight faster AI (LLaMA)</b> to optimise prompts for <b>larger heavy AI (ChatGPT)</b>"</i>
+      </div>
+      <p></p>
+      <b>We Offer Two Modes to integrate our extention in the workflow</b>
+      <p></p>
+
+      <div class="grid two">
+        <div class="card">
+          <h3>Instant Mode</h3>
+          <p>Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Y</kbd> on selected text to open the extension with the text prefilled and return an <strong>optimized prompt</strong> instantly.</p>
+          <ul class="bullets">
+            <li>Zero-click flow from the active page.</li>
+            <li>Deterministic rewrite with quality guardrails.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Analysis Mode</h3>
+          <p>From the extension popup, paste/write a prompt and get:</p>
+          <ul class="bullets">
+            <li><strong>Problem</strong> diagnosis</li>
+            <li><strong>Solution</strong> guidance</li>
+            <li><strong>Score</strong> with rubric</li>
+            <li>2–3 <strong>variations</strong> for exploration</li>
+          </ul>
+        </div>
+      </div>
+      <p></p>
+      <div class="card">
+        <h3>Innovation</h3> 
+        <ol>
+            <li>Dual-Mode UX (Instant vs. Analysis)
+                <ul>
+                    <li><b>Instant Mode</b> → one-click rewrite, minimal friction.</li>
+                    <li><b>Analysis Mode</b> → structured breakdown: problem, solution, score, variations.</li>
+                    <li>Most tools give only one rewritten prompt, not a choice of streamlined vs. educational feedback.</li>
+                </ul>
+            </li>
+            <li>In-Context Workflow (Hotkey → Pop-up with Pre-Filled Text)
+                <ul>
+                    <li>User selects text in any chatbox → presses shortcut → extension opens with prompt already there.</li>
+                    <li>Zero copy-paste, zero context switching — direct in-flow optimization.</li>
+                    <li>Competing tools usually require users to switch to another app/website.</li>
+                </ul>
+            </li>
+        </ol>
+      </div>
+      <span class="section-label">3</span>
+    </section>
+
+    <!-- 4. Technical Approach (Required) -->
+    <section id="tech" class="panel" data-section="4. Technical Approach">
+      <h2>Technical Approach</h2>
+
+      <div class="grid two">
+        <div class="card">
+          <h3>Tools & Stack</h3>
+          <ul class="bullets">
+            <li>Model: LLaMA 3.1:8B (local) or similar light-weight model (server)</li>
+            <li>Chrome Extension (Manifest V3)</li>
+            <li>JavaScript </li>
+            <li>Local inference server (Ollama) with prompt templates</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Workflow</h3>
+          <ol class="bullets">
+            <li>User selects text in chat → presses <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Y</kbd>.</li>
+            <li>Extension popup loads with the selection; Instant mode triggers rewrite.</li>
+            <li>Analysis mode computes rubric scores + guidance + variations.</li>
+            <li>Optimized prompt is returned.</li>
+          </ol>
+        </div>
+      </div>
+      <!-- <div class="card">
+        <h3>Architecture Diagram</h3>
+        <div class="diagram">
+          <div class="box">Web Page (Chat Textarea)</div>
+          <div class="arrow">select + hotkey</div>
+          <div class="box">Content Script</div>
+          <div class="arrow">message</div>
+          <div class="box">Service Worker</div>
+          <div class="arrow">HTTP</div>
+          <div class="box">Local LLaMA (Ollama)</div>
+        </div>
+        <small>Purely local data path; no external calls.</small>
+      </div>
+      <span class="section-label">4</span>
+    </section> -->
+
+    <!-- 5. Demo / Prototype (Required) -->
+    <section id="demo" class="panel" data-section="5. Demo / Prototype">
+      <h2>Demo / Prototype</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Video (drop-in)</h3>
+          <video controls width="100%" poster="assets/demo-poster.png">
+            <source src="assets/demo.mp4" type="video/mp4">
+          </video>
+          <small>Place your local <code>assets/demo.mp4</code> file to play offline.</small>
+        </div>
+        <!-- <div class="card">
+          <h3>Key Features</h3>
+          <ul class="bullets">
+            <li>Selection-aware popup</li>
+            <li>Instant rewrite with guardrails</li>
+            <li>Analysis rubric + variations</li>
+            <li>Replace-in-place or copy output</li>
+          </ul>
+        </div>
+      </div> -->
+
+      <!-- <div class="score-wrap">
+        <h3>Sample Prompt Quality Score</h3>
+        <div class="gauge" role="img" aria-label="Prompt score gauge">
+          <svg viewBox="0 0 120 60">
+            <path d="M10,50 A50,50 0 0,1 110,50" class="g-track"></path>
+            <path id="needle" d="M60,50 L60,20" class="g-needle"></path>
+          </svg>
+          <div class="g-value"><span id="scoreVal">78</span>/100</div>
+        </div>
+        <button class="btn" id="simulateBtn">Simulate Scoring</button>
+      </div>
+      <span class="section-label">5</span>
+    </section> -->
+
+    <!-- 6. Impact & Use Cases (Required) -->
+    <section id="impact" class="panel" data-section="6. Impact & Use Cases">
+      <h2>Impact & Use Cases</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Beneficiaries</h3>
+          <ul class="bullets">
+            <li>Students & researchers drafting queries</li>
+            <li>Developers writing precise instructions</li>
+            <li>Writers and analysts refining briefs</li>
+            <li>AI Image Generators</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Use Cases</h3>
+          <ul class="bullets">
+            <li>Use to Take your Image Generation to the Next Level</li>
+            <li>Improve creative prompts for story writing, blogs, or marketing copy. Variations mode offers alternative phrasing, helping spark creativity.</li>
+            <li>Turn rough client queries into clear, professional prompts for market analysis, report drafting, or brainstorming.</li>
+            <li>Acts as an AI-powered coach, not just a shortcut tool.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Scalability & Sustainability</h3>
+        <ul>
+            <li>Multiple Local Backends: Support different model sizes (e.g., 3B, 8B, 70B quantized) so users can choose speed vs. quality.</li>
+            <li>Store users Preferences and acts accordingly</li>
+            <li>Custom Rubrics: Different scoring templates for students, devs, businesses, etc.</li>
+            <li>Preset Libraries: Save & reuse optimized prompts; community-driven prompt banks.</li>
+            <li>Learning Analytics: Track improvement in user’s prompt quality over time.</li>
+            <li>Package as a standalone desktop app (Electron) for offline users without Chrome.</li>
+            <li>Fine-tune smaller domain-specific models so heavy 8B inference isn’t always needed.</li>
+        </ul>
+      </div>
+      <p></p>
+      <div class="card"><h4>“Grammarly fixes your grammar. Promptly rewrites your prompt.
+Promtly coaches you into a better prompter — instantly, privately, and resourcefully.”</h4></div>
+      <span class="section-label">6</span>
+    </section>
+
+    <!-- 7. Challenges Faced (Required) -->
+    <section id="challenges" class="panel" data-section="7. Challenges Faced & How You Overcame Them">
+      <h2>Challenges & Resolutions</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Hotkey Focus & Selection</h3>
+          <p>Cross-site content-script permissions and capturing selection reliably.</p>
+        </div>
+        <div class="card">
+          <h3>Latency on Local LLM</h3>
+          <p>Prompt template tuning; caching system prompts; streaming partial responses.</p>
+        </div>
+        <!-- <div class="card">
+          <h3>Popup/Worker Messaging</h3>
+          <p>Robust MV3 message routing with retry and error UI.</p>
+        </div> -->
+        <div class="card">
+          <h3>Determinism vs. Creativity</h3>
+          <p>Separate Instant (deterministic) and Analysis (exploratory) paths.</p>
+        </div>
+        <div class="card">
+          <h3>Preserving Core Idea vs. Inventing New Idea</h3>
+          <p>Creating prompts that dont lack the core meaning at the same time add creativity</p>
+        </div>
+      </div>
+      <span class="section-label">7</span>
+    </section>
+
+    <!-- 8. Future Scope (Required) -->
+    <section id="future" class="panel" data-section="8. Future Scope">
+      <h2>Future Scope</h2>
+      <h4>“Even if giants add this inside their platforms, they’ll be locked into their ecosystems. Our edge is being cross-platform, local-first, and customizable — making us the universal prompt coach for any AI, anywhere.”</h4>
+      <h4>"Becomming the universal layer between humans and AI — the trusted, private, cross-platform coach that makes every prompt smarter, no matter the model or platform.”</h4>
+      <span class="section-label">8</span>
+    </section>
+    
+    <!-- 9. Conclusion (Required) -->
+    <section id="conclusion" class="panel" data-section="9. Conclusion">
+        <h2>Conclusion</h2>
+        <p>"Prompts are often vague, inefficient, or insecure — wasting time and resources. Our Prompt Preprocessor makes prompts smarter, instantly or with analysis — all while staying cross-platform. Better prompts mean better answers, less wasted compute, and more empowered users. We envision this as the universal layer between humans and AI — a coach that scales across platforms, industries, and learning contexts. Because in the age of AI, smarter questions create smarter worlds."</h4>
+
+      </ol>
+      <span class="section-label">9</span>
+    </section>
+
+    <!-- 10. Acknowledgements (Required) -->
+    <section id="ack" class="panel" data-section="10. Acknowledgements">
+      <h2>Acknowledgements</h2>
+      <p>Thanks to mentors, organizers, and teammates for guidance and feedback.</p>
+      <span class="section-label">10</span>
+    </section>
+
+  <footer class="site-footer">
+    <small>&copy; 2025 Team Prompt Preprocessor · InnovAct 2025 Presentation</small>
+    <a href="#top" class="to-top" aria-label="Back to top">↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
