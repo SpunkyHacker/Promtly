@@ -89,8 +89,8 @@ It reduces the use of using Heavy Ai carelessly.
 
 <p align="center"> 
   Made with ❤️ by <a href="https://github.com/spunkyhacker">Tharun Prasath M</a>  
-  Made with ❤️ by <a href="https://github.com/arc5tar">Shivansh Verma</a>
-  Made with ❤️ by <a href="#">Sandeev</a>
-  Made with ❤️ by <a href="#">Anu Shree</a>
+   | <a href="https://github.com/arc5tar">Shivansh Verma</a>
+   | <a href="#">Sandeev</a>
+   | <a href="#">Anu Shree</a>
     
 </p>
