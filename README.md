@@ -62,21 +62,21 @@ This is a temporary solution. In the future you will not be required to download
 
 ---
 
-### Tech Stack
+## Tech Stack
 
-## Core Extension
+### Core Extension
 1. *Manifest V3* – Chrome’s latest extension architecture (secure, service-worker-based).
 2. *JavaScript (Vanilla or ES6+)* – For handling content scripts, DOM detection, and logic.
 3. *HTML5 + CSS3* – For the popup UI and options page.
 
-## UI / Styling
+### UI / Styling
 1. CSS – For a modern, responsive popup design.
 
-## AI Optimization Logic
+### AI Optimization Logic
 1. Local Hosted Ai (Right-Now) – Right Now using llama3.1:8b hosted locally
 2. External AI API (optional) – Working on to use more lighter and fine tuned ai which is hosted on a server.
 
-## Future Development
+### Future Development
 Converting the use of locally operated Ai model to a much more light weight model which would run on a server.
 
 
@@ -88,7 +88,7 @@ It reduces the use of using Heavy Ai carelessly.
 ---
 
 <p align="center"> 
-  Made with ❤️ by <a href="https://github.com/spunkyhacker">Tharun Prasath M</a>  
+  Made with ❤️ by <a href="https://github.com/spunkyhacker">Tharun Prasath</a>  
    | <a href="https://github.com/arc5tar">Shivansh Verma</a>
    | <a href="#">Sandeev</a>
    | <a href="#">Anu Shree</a>
