@@ -1,0 +1,21 @@
+{
+  "name": "Prompt Helper",
+  "manifest_version": 3,
+  "version": "1.1",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": ["http://localhost:11434/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "improve_selection": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      },
+      "description": "Improve selected text"
+    }
+  }
+}

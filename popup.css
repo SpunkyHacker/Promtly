@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body { 
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(135deg,#e99999,#7e8fb0);
+    padding:15px;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    margin: 0;
+}
+
+.container {
+    background: #f7caca;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    width: 320px;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* Textarea */
+textarea { 
+    width: 100%; 
+    min-height: 100px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    resize: vertical;
+    transition: border 0.2s, box-shadow 0.2s;
+    margin-bottom: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+textarea:focus {
+    outline: none;
+    border: 1px solid #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79,70,229,0.15);
+}
+
+/* Buttons */
+button { 
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.2s ease;
+    margin-bottom: 10px;
+}
+button:hover {
+    box-shadow: 0 4px 10px rgba(99,102,241,0.3);
+    transform: translateY(-2px);
+}
+button:active {
+    transform: scale(0.98);
+}
+
+/* Result box */
+.result { 
+    margin-top: 15px;
+    background: #f9fafb;
+    padding: 12px;
+    border-radius: 12px;
+    white-space: pre-wrap;
+    font-size: 14px; 
+    line-height: 1.5;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+/* Error messages */
+.error { 
+    color: #dc2626;
+    font-weight: 500;
+    margin-top: 8px;
+}
