@@ -90,7 +90,7 @@ It reduces the use of using Heavy Ai carelessly.
 <p align="center"> 
   Made with ❤️ by <a href="https://github.com/spunkyhacker">Tharun Prasath</a>  
    | <a href="https://github.com/arc5tar">Shivansh Verma</a>
-   | <a href="#">Sandeev</a>
+   | <a href="https://github.com/sandy-27-sp">Sandeev</a>
    | <a href="#">Anu Shree</a>
     
 </p>
